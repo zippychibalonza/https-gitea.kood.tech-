@@ -1,0 +1,20 @@
+package sprint;
+
+public class ArrayInitializer {
+    public int[] fillArray(int max) {
+       
+        if (max < 1) {
+            return new int[0]; // or return new int[]{};
+        }
+        
+        
+        int[] array = new int[max];
+        
+
+        for (int i = 0; i < max; i++) {
+            array[i] = i + 1; // i starts at 0, so add 1 to get values 1, 2, 3, ...
+        }
+        
+        return array;
+    }
+}
